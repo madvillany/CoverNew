@@ -1,0 +1,238 @@
+<html>
+	<head>
+		<title>Calculator</title>
+		<style>
+			* { 
+				box-sizing: border-box; 
+				font-family: Foco, sans-serif;
+				font-weight: 300;
+			}
+
+			body { 
+				color: #fff;
+				background: rgb(0, 171, 159);
+				font-size: 20px;
+			}
+
+			.form {
+				width: 1000px;
+				margin: auto;
+			}
+
+			.form > div {
+				position: relative;
+				padding-bottom: 5px;
+				margin-bottom: 5px;
+				border-bottom: 2px solid white;
+			}
+
+			.form > div:last-of-type{
+				border: none;
+			}
+
+			.form .copy {
+				display: inline-block;
+				width: 400px;
+				font-size: 24px;
+				margin-right: 200px;
+			}
+
+			.form .button {
+				display: inline-block;
+				border: 2px solid white;
+				padding: 10px;
+				font-size: 36px;
+				cursor: pointer;
+			}
+
+			.form .answer {
+				position: absolute;
+				display: inline-block;
+				font-size: 35px;
+				width: 200px;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				line-height: 75px;
+			}
+
+			.form .left {
+				position: absolute;
+				left: 600px;
+			}			
+
+			.form .right {
+				position: absolute;
+				left: 805px;
+			}
+
+			.form .button:hover {
+				background: #fff;
+				color: rgb(0, 171, 159);
+			}
+
+			input[type=text] { 
+				vertical-align: top;
+				background: rgba(0,0,0,.4);
+				border: 0;
+				outline: none;
+				padding: 10px;
+				font-size: 20px;
+				color: #fff;
+				width: 195px;
+				margin-right: 5px;
+				padding-left: 22px;
+			}
+
+			input[type=text]:focus { 
+				background: rgba(0,0,0,.25);
+			}
+
+			.input {
+				position: relative;
+				vertical-align: top;
+				display: inline-block;
+				font-size: 20px;
+			}
+
+			.input::after {
+				display: block;
+				position: absolute;
+				content: "$";
+				top: 10;
+				left: 10;
+				color: #fff;
+				z-index: 5;
+			}
+
+			.input:last-child input {
+				margin: 0;
+			}
+
+			::-webkit-input-placeholder {
+			   color: white;
+			}
+
+			::-moz-placeholder {  /* Firefox 19+ */
+			   color: white;  
+			}
+
+			:-ms-input-placeholder {  
+			   color: white;  
+			}
+		</style>
+	</head>
+	<body>
+
+	<div class="container" style="width: 1920px;">
+		<div class="form">
+			<div class="hr">
+				<div class="left">Student Plan
+				</div><div class="right">Other Health Insurance Options (Family, Exchange Plan, Employer, COBRA)
+				</div>
+			</div>
+			<div>
+				<div class="copy">Annual premium</div>
+				<div class="input student">
+					<input type="text" placeholder="0">
+				</div><div class="input other">
+					<input type="text" placeholder="0">
+				</div>
+			</div>
+			<div>
+				<div class="copy">Annual deductible</div>
+				<div class="input student">
+					<input type="text" placeholder="0">
+				</div><div class="input other">
+					<input type="text" placeholder="0">
+				</div>
+			</div>
+			<div>
+				<div class="copy">Is there an out-of-pocket limit on your expenses?</div>
+				<div class="input student">
+					<input type="text" placeholder="0">
+				</div><div class="input other">
+					<input type="text" placeholder="0">
+				</div>
+			</div>
+			<div>
+				<div class="copy">If you need drugs to treat your illness or condition, what are your prescriptoin drug costs?</div>
+				<div class="input student">
+					<input type="text" placeholder="0">
+				</div><div class="input other">
+					<input type="text" placeholder="0">
+				</div>
+			</div>
+			<div>
+				<div class="copy">If you visit a health care provider's office or clinic, what are your costs (copay or coinsurance)?</div>
+				<div class="input student">
+					<input type="text" placeholder="0">
+				</div><div class="input other">
+					<input type="text" placeholder="0">
+				</div>
+			</div>
+			<div>
+				<div class="copy">If you need tests (diagnostic tests like x-rays, blood work, or imaging tests like CT scans or MRIs) what are your costs?</div>
+				<div class="input student">
+					<input type="text" placeholder="0">
+				</div><div class="input other">
+					<input type="text" placeholder="0">
+				</div>
+			</div>
+			<div>
+				<span class="button">Calculate</span>
+				<span class="answer left">$0.00</span>
+				<span class="answer right">$0.00</span>
+			</div>
+		</div>
+	</div>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.0/TweenLite.min.js"></script>
+		<script>
+
+			function calculateInputs(type) {
+				var result = 0;
+				var inputs = $(".form > div ." + type + " input");
+				inputs.each(function(i) {
+					var val = parseFloat($(this).val());
+					result += (isNaN(val)) ? 0 : val;
+				});
+				return result;
+			}
+
+			function roundTo(num, decimalPoint) {
+				var factor = Math.pow(10,decimalPoint);
+				num = parseInt(num * factor);
+				return num/factor;
+			}
+
+			var studentResult = $(".answer.left");
+			var otherResult = $(".answer.right");
+
+			$(".input input").keypress(function(e) {
+				var regex = /[0-9\.]+/;
+				if(!regex.test(String.fromCharCode(e.which))){
+					e.preventDefault();
+				};
+			});
+
+			$(".button").click(function() {
+				var studentValue = calculateInputs("student");
+				var otherValue = calculateInputs("other");
+				var interpolatedValues = {
+					student: parseFloat(studentResult.text().substr(1,50)),
+					other: parseFloat(otherResult.text().substr(1,50))
+				}
+
+				TweenLite.to(interpolatedValues, 2 , {student: studentValue, other: otherValue, ease:Power4.easeInOut, onUpdate: function(){
+					studentResult.text("$" + interpolatedValues.student.toFixed(2));
+					otherResult.text("$" + interpolatedValues.other.toFixed(2));
+				}});
+
+			});
+
+
+
+		</script>
+	</body>
+</html>

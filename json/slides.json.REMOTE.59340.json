@@ -1,0 +1,558 @@
+[
+    {
+        "id": 0
+    },
+    {
+        "id": 1,
+        "progress": 0,
+        "heading": {
+            "text": "Ok, before we get started, which of the following best describes you?",
+            "style": "left"
+        },
+        "responseStyle": "center",
+        "responses": [
+            "I am going to college",
+            "I know someone who is going to college"
+        ],
+        "actions": [2]
+    },
+    {
+        "id": 2,
+        "heading": {
+            "text": "Nice to meet you!",
+            "style": "center"
+        },
+        "characterPos": true,
+        "character": {
+            "img": "img/Q2_compressed.png",
+            "width": 1140,
+            "height": 1080,
+            "animations":{
+                "init": [0,1,2,3,4,5,6,7,0,1,2,3,4,5,6,7,0,1,2,3,4,5,6,7,0,1,2,3,4,5,6,7,0],
+                "idle": [0]
+            }
+        },
+        "actions": [3],
+        "wait": 3,
+        "retain": {}
+    },
+    {
+        "id": 3,
+        "heading": {
+            "text": "I'm a...",
+            "style": "left"
+        },
+        "actions": [4,4,4],
+        "responses": [
+            "First-year student",
+            "Transfer student",
+            "Continuing student"
+        ],
+        "character": {
+            "img": "img/Q3_compressed.png",
+            "width": 1140,
+            "height": 1080,
+            "animations":{
+                "idle": [0],
+                "a": {
+                    "in": [1,2,3,4,5,6],
+                    "out": [8,9,10,11,12]
+                },
+                "b": {
+                    "in": [13,14,15,16,17,19,20,21,22,23],
+                    "out": [24,25,26,27,28,29]
+                },
+               "c": {
+                    "in": [30,31,32,33,34,35,36,37,38],
+                    "out": [39,40,41,42,43,44,45,46]
+                }
+            }
+        },
+        "retain": {
+            "character": true
+        }
+    },
+    {
+        "id": 4,
+        "heading": {
+            "text": "How far is school from home?",
+            "style": "left"
+        },
+        "actions": [5,5,5],
+        "responses": [
+            "It's drivable",
+            "Flying makes sense",
+            "I'm an international student"
+        ],
+        "backgrounds": {
+            "init": {
+                "id": "Q4_bG_in",
+                "path": "Q4_bG_in"
+            },
+            "bg": {
+                "id": "EDGE-q4",
+                "path": "Q4bg"
+            }
+        },
+        "character": {
+            "img": "img/Q4_compressed.png",
+            "width": 1140,
+            "height": 1080,
+            "animations":{
+                "idle": [0],
+                "doctor’s": {
+                    "in": [1,2,3],
+                    "out": [4,5,6]
+                },
+                "a": {
+                    "in": [8,9,10,11,12,14,15],
+                    "out": [17,18,19]
+                },
+               "b": {
+                    "in": [20,21,22,23,24,25,26],
+                    "out": [27,28,29,30,31]
+                },
+                "c": {
+                    "in": [32,33,34,35,36,37,38,39],
+                    "out": [40,41,42,43]
+                }
+            }
+        },
+        "retain": {
+            "character": true,
+            "background": true
+        }
+    },
+    {
+        "id": 5,
+        "heading": {
+            "text": "Your newfound independence is going to mean many new responsibilities. Normally, do you make your own appointments or pay doctors’ bills?",
+            "style": "left half"
+        },
+        "responses": [
+            "Yes, I've done both",
+            "I've made appointments",
+            "I've paid doctor bills",
+            "No, someone else has done that for me",
+            "I've never been to a doctor"
+        ],
+        "character": {
+            "img": "img/Q5_compressed.png",
+            "width": 1140,
+            "height": 1080,
+            "animations":{
+                "init": [0,1,2,3,4,5,6,7],
+                "idle": [7],
+                "end": [6,5,4,3,2,1,0],
+                "a": {
+                    "in": [8,9,10,11,12,13],
+                    "out": [14,15,16]
+                },
+                "b": {
+                    "in": [18,19,20,21,22,23,24],
+                    "out": [25,26,27,28,29]
+                },
+               "c": {
+                    "in": [30,31,32,33,34,35],
+                    "out": [36,37,38,39,40]
+                },
+                "d": {
+                    "in": [41,42,43,44,45,46,47],
+                    "out": [48,49,50,51,52,53]
+                },
+                "e": {
+                    "in": [54,55,56,57,58,59,60,61],
+                    "out": [62,63,64,65]
+                }
+            }
+        },
+        "actions": [6.1,6.1,6.1,6.2,6.3],
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-91100205",
+                "path": "DORM_BG_040115"
+            }
+        },
+        "retain": {
+            "character": true
+        }
+    },
+    {
+        "id": 6.1,
+        "heading": {
+            "text": "That’s great! But there’s still a lot to know as you venture out by yourself. Maybe we can help.",
+            "style": "center"
+        },
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-7224463",
+                "path": "Q6"
+            }
+        },
+        "wait": 3,
+        "actions": [7]
+    },
+    {
+        "id": 6.2,
+        "heading": {
+            "text": "Well, that’s pretty common for people going to college. But now you will have to take care of yourself. Maybe we can help.",
+            "style": "center"
+        },
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-7224463",
+                "path": "Q6"
+            }
+        }, 
+        "wait": 3,
+        "actions": [7]
+    },
+    {
+        "id": 6.3,
+        "heading": {
+            "text": "Wow, you must be healthy! But chances are you’ll have to make an appointment or pay a doctor’s bill at some point. Maybe we can help.",
+            "style": "center"
+        },
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-7224463",
+                "path": "Q6"
+            }
+        },
+        "wait": 3,
+        "actions": [7]
+    },{
+        "id": 7,
+        "heading": {
+            "text": "Let’s begin with some questions about you. At some schools, the Aetna Student Health Plan is only available for full-timers. Are you a part or full-time  student this year?",
+            "style": "left half"
+        },
+        "character": {
+            "img": "img/Q7_compressed.png",
+            "width": 1140,
+            "height": 1080,
+            "animations":{
+                "init": [0,1,2,3,4,5,6],
+                "idle": [6],
+                "a": {
+                    "in": [7,8,9,10,11],
+                    "out": [10,9,8,7]
+                },
+                "b": {
+                    "in": [12,13,14,15,16],
+                    "out": [15,14,13,12]
+                }
+            }
+        },
+        "responses": [
+            "I'm part-time",
+            "I'm full-time"
+        ],
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-91100205",
+                "path": "DORM_BG_040115"
+            }
+        },
+        "actions": [8,8],
+        "retain": {}
+    },{
+        "id": 8,
+        "heading": {
+            "text": " Are you a graduate student?",
+            "style": "left half large"
+        },
+        "character": {
+            "img": "img/Q8_compressed.png",
+            "width": 1140,
+            "height": 1080,
+            "animations":{
+                "idle": [0],
+                "a": {
+                    "in": [1,2,3,4,5,6],
+                    "out": [7,8,9]
+                },
+                "b": {
+                    "in": [10,11,12,13,14,15],
+                    "loop": [16,17],
+                    "out": [18,19,20]
+                }
+            }
+        },
+        "actions": [9.1,9.2],
+        "responses": [
+            "Yes",
+            "No"
+        ],
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-91100205",
+                "path": "DORM_BG_040115"
+            }
+        },
+        "retain": {
+            "character": true,
+            "background": true
+        }
+    },{
+        "id": 9.1,
+        "heading": {
+            "text": "Soon enough, friend. You’re on your way! First, let’s learn more about how student health insurance works.",
+            "style": "center"
+        },
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-8449181",
+                "path": "Q9a"
+            }
+        },
+        "wait": 3,
+        "actions": [10]
+    },{
+        "id": 9.2,
+        "heading": {
+            "text": "Schools sometimes provide a stipend for graduate students to use towards the cost of health insurance, but your school may require your stipend be used towards the cost of an Aetna Student Health plan.",
+            "style": "center"
+        },
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-9302337",
+                "path": "Q9b"
+            }
+        },
+        "wait": 3,
+        "actions": [9.3]
+    },{
+        "id": 9.3,
+        "heading": {
+            "text": "Be sure to conﬁrm how your individual school handles this. But ﬁrst, let’s learn more about how student health insurance works.",
+            "style": "center"
+        },
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-8449181",
+                "path": "Q9b2"
+            }
+        },
+        "wait": 3,
+        "actions": [10]
+    },{
+        "id": 10,
+        "heading": {
+            "text": "Have you ever needed serious medical care?",
+            "style": "left half large"
+        },       
+        "responses": [
+            "No, nothing serious",
+            "Actually, I have"
+        ],
+        "actions": [11.1, 11.2],
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-15970772",
+                "path": "Q10in"
+            }
+        }
+    },{
+        "id": 11.1,
+        "heading": {
+            "text": "But, if you did need treatment, you’d want to be covered. An unforseen medical problem could easily be a ﬁnancial problem for years to come and no one needs extra worry when they’re unwell. Let’s ﬁnd out why and how you can protect yourself against that.",
+            "style": "center"
+        },
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-89675237",
+                "path": "Q11a"
+            }
+        },
+        "wait": 5,
+        "actions": [12.1]
+    },{
+        "id": 11.2,
+        "heading": {
+            "text": "But, if you did need treatment, you’d want to be covered. An unforseen medical problem could easily be a ﬁnancial problem for years to come and no one needs extra worry when they’re unwell. Let’s ﬁnd out why and how you can protect yourself against that.",
+            "style": "center"
+        },
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-91548614",
+                "path": "Q11b"
+            }
+        },
+        "wait": 9,
+        "actions": [12.1]
+    },{
+        "id": 12.1,
+        "heading": {
+            "text": "Basically, any medical care you recieve costs money. Doctors, nurses and hospitals all need to get paid.",
+            "style": "center"
+        },
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-q12a",
+                "path": "Q12a"
+            }
+        },
+        "wait": 5,
+        "actions": [12.2]
+    },{
+        "id": 12.2,
+        "heading": {
+            "text": " That’s why people get health insurance. When you have medical expenses, the insurance company will often pay part of the bills, making the parts you’re responsible for much easier to handle.",
+            "style": "center"
+        },
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-q12b",
+                "path": "Q12b"
+            }
+        },
+        "wait": 6,
+        "actions": [13]
+    },{
+        "id": 13,
+        "heading": {
+            "text": "Do you have medical insurance right now?",
+            "style": "left"
+        },
+        "responses": [
+            "Yes, I do",
+            "No, not at the moment"
+        ],
+        "actions": [14,14],
+        "character": {
+            "img": "img/Q13_compressed.png",
+            "width": 1140,
+            "height": 1080,
+            "animations":{
+                "idle": [0],
+                "a": {
+                    "in": [1,2,3,4],
+                    "out": [3,2,1],
+                    "end": [17,18,19,20,17,18,37,38,39,40,41,41,41,41,42,43,44,45,46,47,48,49,50]
+                },
+                "b": {
+                    "in": [6,7,8,9,10,11,12,13],
+                    "out": [14,15,16],
+                    "end": [17,18,19,20,17,18,21,22,23,24,25,25,25,25,26,27,28,29,30,31,32,33,34,35,36]
+                }
+            }
+        },
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-doctor",
+                "path": "DOCTORS_BG_040215"
+            }
+        }
+    },{
+        "id": 14,
+        "heading": {
+            "text": "What type of plan are you on?",
+            "style": "left"
+        },
+        "responses": [
+            "Parent's insurance",
+            "Through my job",
+            "Something else or I don't know"
+        ],
+        "actions": [15.1,15.1,15.2],
+        "character": {
+            "img": "img/Q14_compressed.png",
+            "width": 1140,
+            "height": 1080,
+            "animations":{
+                "idle": [0],
+                "a": {
+                    "in": [1,2,3,4,5,6,7],
+                    "out": [8,9,10]
+                },
+                "b": {
+                    "in": [11,12,13,14,15,16,17],
+                    "out": [18,19,20]
+                },
+                "c": {
+                    "in": [21,22,23,24,25,26,27],
+                    "out": [28,29,30]
+                }
+            }
+        },
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-91100205",
+                "path": "DORM_BG_040115"
+            }
+        },
+        "retain": {
+            "character": true
+        }
+    },{
+        "id": 15.1,
+        "heading": {
+            "text": "Staying on that plan may be a good option for you. But there are some good reasons you should consider the Aetna Student Health plan. Let’s take a look at how health plans work.",
+            "style": "center"
+        },
+        "actions": [16.1],
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-8449181",
+                "path": "Q9b2"
+            }
+        },
+        "wait": 3
+    },{
+        "id": 15.2,
+        "heading": {
+            "text": "Hmm, sounds like you might be a perfect candidate to consider an Aetna Student Health plan! Let’s take a look at how health plans work.",
+            "style": "center"
+        },
+         "actions": [16.1],
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-8449181",
+                "path": "Q9b2"
+            }
+        },
+        "wait": 3
+    },{
+        "id": 16.1,
+        "heading": {
+            "text": "Did you know that if you see a doctor who isn’t in the network, the charge can be high?",
+            "style": "center small"
+        },
+        "actions": [16.2],
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-4752740",
+                "path": "Q16A"
+            }
+        },
+        "wait": 4
+    },{
+        "id": 16.2,
+        "heading": {
+            "text": "If your plan doesn’t offer coverage outside its network, you could be responsible for the full cost.",
+            "style": "center small"
+        },
+        "actions": [16.3],
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-87741465",
+                "path": "Q16B"
+            }
+        },
+        "wait": 4
+    },{
+        "id": 16.3,
+        "heading": {
+            "text": "In the case of an Aetna Student Health plan, the network would be the Aetna Preferred Provider network. It’s made up of lots of doctors and specialists — all over the country.",
+            "style": "center small"
+        },
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-175604431",
+                "path": "Q16C"
+            }
+        },
+        "wait": 4
+    }
+]

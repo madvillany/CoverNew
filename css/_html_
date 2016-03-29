@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>{:New Site}</title>
+		<style>
+			
+		</style>
+	</head>
+	<body bgcolor="#cccccc">
+		<div>
+			<div>
+			</div>
+			<div>
+			</div>
+			<div>
+			</div>
+			<textarea>
+
+			</textarea>
+		</div>
+	</body>
+</html>

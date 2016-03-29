@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="664.3" height="87.3" viewBox="0 0 664.3 87.3">
+  <g fill="none" stroke="#FFF" stroke-width="4.552" stroke-linecap="round" stroke-miterlimit="10">
+    <path d="M2.3 85v-.5"/>
+    <path stroke-dasharray="1.1497,8.0481" d="M2.3 76.4V6.9"/>
+    <path d="M2.3 2.8v-.5h.5"/>
+    <path stroke-dasharray="1.1455,8.0182" d="M10.9 2.3h646.6"/>
+    <path d="M661.5 2.3h.5v.5"/>
+    <path stroke-dasharray="1.1497,8.0481" d="M662 10.9v69.6"/>
+    <path d="M662 84.5v.5"/>
+  </g>
+</svg>

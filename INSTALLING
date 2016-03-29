@@ -1,0 +1,17 @@
+SETTING UP THE MAIL SCRIPT
+
+	mailer.php:
+		Edit the globals at the top of the file (line 3).
+
+		
+$COVERU_URL - the URL that CoverU will be live from.
+		
+$AETNA_LOGO_URL - the URL that the logo will be served from (from a CDN or somewhere on the server)
+		
+$AETNA_EMAIL - the email address for the "From:" header that represents Aetna
+
+	js/main.js:
+		Edit the globals at the top of the file (line 5).
+
+		
+CoverU.EMAIL_SCRIPT - the URL for mailer.php script

@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<title>{:New Site}</title>
+		<style>
+			.email-module {
+				width: 900px;
+			}
+
+			.email-module > div {
+				position: relative;
+			}
+
+			.label {
+				position: absolute;
+				padding: 10px 0 8px 10px;
+				font-size: 18px;
+				font-family: Foco, sans-serif;
+				font-weight: 700;
+				top: 0;
+				left: 0;
+			}
+
+			input, textarea {
+				font-family: Foco, sans-serif;
+				background: #fff;
+				border: 0;
+				margin-bottom: 5px;
+				font-size: 18px;
+				width: 100%;
+				outline: none;
+				resize: none;
+			}
+
+
+			input { 
+				padding: 10px 0 8px 10px;
+			}
+
+			textarea {
+				padding: 10px;
+				height: 200px;
+			}
+
+			.email { padding-left: 175px; }
+			.subject { padding-left: 80px; }
+		</style>
+	</head>
+	<body bgcolor="#cccccc">
+		<div class="email-module">
+			<div>
+				<div class="label">Their email address</div>
+				<input name="theiremail" class="email" placeholder="lol"></input>
+			</div>
+			<div>
+				<div class="label">Your email address</div>
+				<input name="youremail" class="email" value="lol"></input>
+			</div>
+			<div>
+				<div class="label">Subject</div>
+				<input name="subject" class="subject"></input>
+			</div>
+			<textarea>Hey! Here is some information about student health insurance that I thought you would find useful.</textarea>
+			<div class="button">Send</div>
+		</div>
+	</body>
+</html>

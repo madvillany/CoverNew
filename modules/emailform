@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>{:New Site}</title>
+		<style>
+			
+		</style>
+	</head>
+	<body bgcolor="#cccccc">
+		<div class="email-module">
+			<div>
+				<div class="label">Their email address</div>
+				<input></input>
+			</div>
+			<div>
+				<div class="label">Your email address</div>
+				<input></input>
+			</div>
+			<div>
+				<div class="label">Subject</div>
+				<input></input>
+			</div>
+			<textarea>
+			</textarea>
+		</div>
+	</body>
+</html>

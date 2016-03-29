@@ -1,0 +1,2269 @@
+[
+    {
+        "id": 0
+    },
+    {
+        "id": 1,
+        "progress": 0,
+        "heading": {
+            "text": "Before we get started &ndash; which of the following best describes you?",
+            "style": "left"
+        },
+        "audio": "Q1.mp3",
+        "responseStyle": "center",
+        "responses": [
+            "I am going to college",
+            "I know someone who is going to college"
+        ],
+        "actions": [2,30]
+    },
+    {
+        "id": 2,
+        "progress": 2,
+        "heading": {
+            "text": "Nice to meet you!",
+            "style": "center large"
+        },
+        "audio": "Q2.mp3",
+        "backgrounds": {
+            "foreground": {
+                "id": "EDGE-q2",
+                "path": "Q2",
+                "nofade": true,
+                "voffset": 70,
+                "mobile": {
+                    "scale": 1.5,
+                    "voffset": 50
+                }
+            }
+
+        },
+        "adjustments": {
+            "voffset": 0
+        },
+        "mobile": {
+            "scale": 2,
+            "voffset": 20
+        },
+        "actions": [3],
+        "wait": 2
+    },
+    {
+        "id": 3,
+        "progress": 4,
+        "heading": {
+            "text": "So you are a...",
+            "style": "left"
+        },
+        "audio": "Q3.mp3",
+        "actions": [4,4,4],
+        "responses": [
+            "First-year student",
+            "Transfer student",
+            "Continuing student"
+        ],
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-91100205",
+                "path": "DORM_BG_040115"
+            },
+            "foreground": {
+                "id": "EDGE-q3",
+                "path": "Q4",
+                "nofade": true,
+                "voffset": 70,
+                "mobile": {
+                    "scale": 1.5,
+                    "voffset": -75
+                }
+            }
+        },
+        "mobile": {
+            "scale": 1.5
+        }
+    },
+    {
+        "id": 4,
+        "progress": 6,
+        "heading": {
+            "text": "How far is school from home?",
+            "style": "left"
+        },
+        "audio": "Q4.mp3",
+        "actions": [5,5,57.1],
+        "responses": [
+            "It's drivable",
+            "Flying makes sense",
+            "I'm an international student"
+        ],
+        "backgrounds": {
+            "init": {
+                "id": "Q4_bG_in",
+                "path": "Q4_bG_in"
+            },
+            "loop": {
+                "id": "EDGE-q4",
+                "path": "Q4bg"
+            },
+            "a": {
+                "id": "EDGE-91100205b",
+                "path": "Q4b"
+            }, 
+            "foreground": {
+                "id": "EDGE-q4-fg",
+                "path": "Q3_Cond",
+                "nofade": true,
+                "voffset": 70
+            }
+        },
+        "mobile": {
+            "scale": 1.25
+        }
+    },
+    {
+        "id": 5,
+        "progress": 10,
+        "heading": {
+            "text": "Your newfound independence means new responsibilities. Do you make your own appointments or pay doctors’ bills?",
+            "style": "left half"
+        },
+        "audio": "Q5.mp3",
+        "responses": [
+            "Yes, I've done both",
+            "I've made appointments",
+            "I've paid doctor bills",
+            "No, someone else has done that for me",
+            "I've never been to a doctor"
+        ],
+        "actions": [6.1,6.1,6.1,6.2,6.3],
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-91100205",
+                "path": "DORM_BG_040115"
+            },
+             "foreground": {
+                "id": "EDGE-q5-fg",
+                "path": "Q5A",
+                "voffset": 70
+            }
+        },
+        "mobile": {
+            "voffset": -45,
+            "scale": 0.85
+        }
+    },
+    {
+        "id": 6.1,
+        "progress": 12,
+        "heading": {
+            "text": "That’s great! But there’s still a lot to know as you venture out by yourself. Maybe we can help.",
+            "style": "center"
+        },
+        "audio": "Q6a.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-7224463",
+                "path": "Q6",
+                "voffset": -100
+            }
+        },
+        "wait": 2,
+        "actions": [7],
+        "mobile": {
+            "scale": 2.5,
+            "voffset": -50
+        }
+    },
+    {
+        "id": 6.2,
+        "progress": 12,
+        "heading": {
+            "text": "Well, that’s pretty common for people going to college. But now you will have to take care of yourself. Maybe we can help.",
+            "style": "center"
+        },
+        "audio": "Q6b.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-7224463",
+                "path": "Q6",
+                "voffset": -100
+            }
+        }, 
+        "wait": 2,
+        "actions": [7]
+    },
+    {
+        "id": 6.3,
+        "progress": 12,
+        "heading": {
+            "text": "Wow, you must be healthy! But chances are you’ll have to make an appointment or pay a doctor’s bill at some point. Maybe we can help.",
+            "style": "center"
+        },
+        "audio": "Q6c.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-7224463",
+                "path": "Q6",
+                "voffset": -60
+            }
+        },
+        "wait": 2,
+        "actions": [7]
+    },{
+        "id": 7,
+        "progress": 20,
+        "heading": {
+            "text": "Let's begin with some questions about you. At some schools, Aetna Student Health plans are only available for full-timers. Are you a part or full-time student this year?",
+            "style": "left half"
+        },
+        "audio": "Q7.mp3",
+        "responses": [
+            "I'm part-time",
+            "I'm full-time"
+        ],
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-91100205",
+                "path": "DORM_BG_040115"
+            },
+            "foreground": {
+                "id": "EDGE-q7-fg",
+                "path": "Q7",
+                "nofade": true,
+                "voffset": 70
+            }
+        },
+        "actions": [8,8],
+        "retain": {}
+    },{
+        "id": 8,
+        "progress": 25,
+        "heading": {
+            "text": " Are you a graduate student?",
+            "style": "left half large"
+        },
+        "audio": "Q8.mp3",
+        "actions": [9.2,9.1],
+        "responses": [
+            "Yes",
+            "No"
+        ],
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-91100205",
+                "path": "DORM_BG_040115"
+            },
+            "foreground": {
+                "id": "EDGE-q8-fg",
+                "path": "Q8",
+                "voffset": 70
+            }
+        },
+        "retain": {
+            "character": true,
+            "background": true
+        }
+    },{
+        "id": 9.1,
+        "progress": 28,
+        "heading": {
+            "text": "Soon enough. You’re on your way! First, let’s learn more about how student health insurance works.",
+            "style": "center"
+        },
+        "audio": "Q9b.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-8449181",
+                "path": "Q9a"
+            }
+        },
+        "wait": 2,
+        "actions": [10]
+    },{
+        "id": 9.2,
+        "progress": 28,
+        "heading": {
+            "text": "Schools sometimes provide a subsidy for grad students to use towards the cost of health insurance. Your school may require that your subsidy be used towards the cost of an Aetna Student Health plan.",
+            "style": "center"
+        },
+        "audio": "Q9a-1.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-9302337",
+                "path": "Q9b",
+                "voffset": -50
+            }
+        },
+        "wait": 2,
+        "actions": [9.3],
+        "mobile": {
+            "scale": 1.25,
+            "voffset": -250
+        }
+    },{
+        "id": 9.3,
+        "progress": 28,
+        "heading": {
+            "text": "Be sure to conﬁrm how your school handles this. First, let’s learn more about how student health insurance works.",
+            "style": "center"
+        },
+        "audio": "Q9a-2.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-8449181",
+                "path": "Q9b2",
+                "voffset": -100
+            }
+        },
+        "wait": 2,
+        "actions": [10],
+        "mobile": {
+            "scale": 1.5,
+            "voffset": -100
+        }
+    },{
+        "id": 10,
+        "progress": 32,
+        "heading": {
+            "text": "Have you ever needed medical care for a serious health issue?",
+            "style": "left half large"
+        },    
+        "audio": "Q10.mp3",   
+        "responses": [
+            "No, nothing serious",
+            "Actually, I have"
+        ],
+        "actions": [11.1, 11.2],
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-15970772",
+                "path": "Q10in"
+            },
+            "b": {
+                "id": "EDGE-15970771",
+                "path": "Q10b"
+            }
+        }
+    },{
+        "id": 11.1,
+        "progress": 36,
+        "heading": {
+            "text": "But, if you did need treatment, you’d want to be covered.  An unforeseen medical problem could easily be a financial problem for years to come. And no one needs extra worry when they’re unwell. Let’s ﬁnd out why and how you can protect yourself against that.",
+            "style": "center medium"
+        },
+        "audio": "Q11a.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-89675237",
+                "path": "Q11a",
+                "voffset": -40
+            }
+        },
+        "wait": 2,
+        "actions": [12.1],
+        "mobile": {
+            "scale": 1.35,
+            "voffset": -300
+        }
+    },{
+        "id": 11.2,
+        "progress": 36,
+        "heading": {
+            "text": "Then you know it can be tricky to balance your recovery with making sure all the bills are taken care of the right way. You don't want them to become a huge financial problem. Let's find out how you can protect yourself against that.",
+            "style": "center"
+        },
+        "audio": "Q11b.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-91548614",
+                "path": "Q11b",
+                "voffset": -10
+            }
+        },
+        "wait": 2,
+        "actions": [12.1]
+    },{
+        "id": 12.1,
+        "progress": 40,
+        "heading": {
+            "text": "Any medical care you recieve costs money. Doctors, nurses and hospitals all need to get paid.",
+            "style": "center"
+        },
+        "audio": "Q12-1.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-q12a",
+                "path": "Q12a",
+                "voffset": -80
+            }
+        },
+        "wait": 2,
+        "actions": [12.2],
+        "mobile": {
+            "scale": 1.5,
+            "voffset": -125
+        }
+    },{
+        "id": 12.2,
+        "progress": 40,
+        "heading": {
+            "text": " That’s why people get health insurance. When you have medical expenses, the insurance company will often pay a part of the bills, making the parts you’re responsible for much easier to handle.",
+            "style": "center"
+        },
+        "audio": "Q12-2.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-q12b",
+                "path": "Q12b",
+                "voffset": -60
+            }
+        },
+        "wait": 2,
+        "actions": [13],
+        "mobile": {
+            "scale": 1.25,
+            "voffset": -275
+        }
+    },{
+        "id": 13,
+        "progress": 44,
+        "heading": {
+            "text": "Do you have medical insurance right now?",
+            "style": "left large third"
+        },
+        "audio": "Q12-3.mp3",
+        "responses": [
+            "Yes, I do",
+            "No, not at the moment"
+        ],
+        "actions": [14,15.2],
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-doctor",
+                "path": "DOCTORS_BG_040215"
+            },
+            "foreground": {
+                "id": "EDGE-q12",
+                "path": "Q12",
+                "transitionOut": true,
+                "voffset": 70
+            }
+        }
+    },{
+        "id": 14,
+        "progress": 48,
+        "heading": {
+            "text": "What type of plan are you on?",
+            "style": "left large"
+        },
+        "audio": "Q13.mp3",
+        "responses": [
+            "Through my job",
+            "Parent's insurance",
+            "Something else or I don't know"
+        ],
+        "actions": [15.1,15.1,15.2],
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-library",
+                "path": "LIBRARY_BG_040115"
+            },
+            "foreground": {
+                "id": "EDGE-q13-fg",
+                "path": "Q13",
+                "voffset": 70
+            }
+        },
+        "retain": {
+            "character": true
+        }
+    },{
+        "id": 15.1,
+        "progress": 50,
+        "heading": {
+            "text": "Your current plan might be a good option. But there are features of the Aetna Student Plan that may make it a better option. Let’s take a look at how health plans work.",
+            "style": "center"
+        },
+        "audio": "Q14a.mp3",
+        "actions": [16],
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-8449181",
+                "path": "Q9b2",
+                "voffset": -60
+            }
+        },
+        "wait": 2,
+        "mobile": {
+            "scale": 1.25,
+            "voffset": -250
+        }
+    },{
+        "id": 15.2,
+        "progress": 50,
+        "heading": {
+            "text": "Hmm, sounds like you might be a perfect candidate to consider an Aetna Student Health plan! Let’s take a look at how health plans work.",
+            "style": "center"
+        },
+        "audio": "Q14b.mp3",
+        "actions": [16],
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-8449181",
+                "path": "Q9b2",
+                "voffset": -20
+            }
+        },
+        "wait": 2,
+        "mobile": {
+            "scale": 1.25,
+            "voffset": -250
+        }
+    },{
+        "id": 16,
+        "progress": 54,
+        "heading": {
+            "text": "Medical plans have a group of doctors and hospitals that have agreed to work with that plan and accept certain rates for services. That group is called a \"network.\"",
+            "style": "center small"
+        },
+        "audio": "Q15-1.mp3",
+        "actions": [16.1],
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-504987525",
+                "path": "Q15"
+            }
+        },
+        "wait": 2,
+        "mobile": {
+            "scale": 1.25
+        }
+    },{
+        "id": 16.1,
+        "progress": 54,
+        "heading": {
+            "text": "Did you know that if you see a doctor who isn’t in the network, the charge could be higher?",
+            "style": "center medium"
+        },
+        "audio": "Q15-2.mp3",
+        "actions": [16.2],
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-4752740",
+                "path": "Q16A",
+                "nofade": true,
+                "voffset": 50
+            }
+        },
+        "wait": 2,
+        "mobile": {
+            "scale": 1.25,
+            "voffset": -250
+        }
+    },{
+        "id": 16.2,
+        "progress": 54,
+        "heading": {
+            "text": "If your plan doesn’t offer coverage outside its network, you could be on the hook for the full cost.",
+            "style": "center medium"
+        },
+        "audio": "Q15-3.mp3",
+        "actions": [16.3],
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-87741465",
+                "path": "Q16B",
+                "nofade": true,
+                "voffset": 50
+            }
+        },
+        "wait": 2
+    },{
+        "id": 16.3,
+        "progress": 54,
+        "heading": {
+            "text": "In the case of an Aetna Student Health plan, the network is the Aetna Preferred Provider network. It’s made up of lots of doctors and specialists — all over the country.",
+            "style": "center medium"
+        },
+        "audio": "Q16.mp3",
+        "actions": [17.1],
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-175604431",
+                "path": "Q16C",
+                "voffset": 50
+            }
+        },
+        "wait": 2,
+        "mobile": {
+            "voffset": -250
+        }
+    },{
+        "id": 17.1,
+        "progress": 58,
+        "heading": {
+            "text": "Most conveniently, the Aetna network usually includes the student health center on campus. This is the first place to go to if you need medical attention. Unless it’s an emergency, of course.",
+            "style": "center small"
+        },
+        "audio": "Q17-1.mp3",
+        "actions": [17.2],
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-q17a",
+                "path": "Q17A",
+                "voffset": 50,
+                "nofade": true
+            }
+        },
+        "wait": 3
+    },{
+        "id": 17.2,
+        "progress": 58,
+        "heading": {
+            "text": "If it turns out you need more care than the student health center can provide, it will usually refer you to a local doctor who’s in the Aetna network.",
+            "style": "center small "
+        },
+        "audio": "Q17-2.mp3",
+        "actions": [17.3],
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-q17b",
+                "path": "Q17B",
+                "voffset": 50,
+                "nofade": true
+            }
+        },
+        "wait": 2
+    },{
+        "id": 17.3,
+        "progress": 58,
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-q17c",
+                "path": "Q17C",
+                "voffset": 50
+            }
+        },
+        "actions": [18.1],
+        "wait": 3
+    },{
+        "id": 18.1,
+        "progress": 62,
+        "heading": {
+            "text": "One more note on networks, some can be very small. You should make sure that the health plan you’re currently on has in-network doctors near your school.",
+            "style": "center medium"
+        },
+        "audio": "Q18-1.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-Q18A",
+                "path": "Q18A",
+                "voffset": 55,
+                "nofade": true
+            }
+        },
+        "actions": [18.2],
+        "wait": 2
+    },{
+        "id": 18.2, 
+        "progress": 62,       
+        "heading": {
+            "text": "If not, you may need to run home for any non-emergency care.",
+            "style": "center large"
+        },
+        "audio": "Q18-2.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-18B",
+                "path": "Q18B",
+                "voffset": 55,
+                "nofade": true
+            }
+        },
+        "actions": [19],
+        "wait": 2
+    },{
+        "id": 19,
+        "progress": 66,
+        "heading": {
+            "text": "Luckily, the Aetna network has doctors almost everywhere. You're likely covered wherever you go, all year. Your coverage also includes trips to many other countries.",
+            "style": "center small "
+        },
+        "audio": "Q19.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-Q19",
+                "path": "Q19",
+                "voffset": 55
+            }
+        },
+        "actions": [20.1],
+        "wait": 2
+    },{
+        "id": 20.1,
+        "progress": 70,
+        "heading": {
+            "text": "Insurance plans cover some of your costs for medical services, but that usually doesn’t kick in right away. Many medical plans have an amount of money that you need to pay first. This is called a \"deductible.\"",
+            "style": "center small "
+        },
+        "audio": "Q20-1.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-9302337",
+                "path": "Q20a",
+                "fadeIn": true,
+                "voffset": -40
+            }
+        },
+        "actions": [20.2],
+        "wait": 2
+    },{
+        "id": 20.2,
+        "progress": 70,
+        "heading": {
+            "text": "These can be low, or upward of a thousand dollars. Your school's Aetna Student Health plan will likely have a deductible, but it's usually pretty reasonable.",
+            "style": "left fortypt xlarge"
+        },
+        "audio": "Q20-2.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-q20b",
+                "path": "Q20b",
+                "fadeIn": true
+            }
+        },
+        "actions": [21.1],
+        "wait": 2,
+        "mobile": {
+            "voffset": -250
+        }
+    },{
+        "id": 21.1,
+        "progress": 74,
+        "heading": {
+            "text": "Now, to join an insurance plan, you’ll need to pay what’s called a \"premium.\" Two people might have very different premiums based on how likely they are to use their plan’s coverage.",
+            "style": "center"
+        },
+        "audio": "Q21-1.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-q21a",
+                "path": "Q21a",
+                "fadeIn": true,
+                "nofade": true
+            }
+        },
+        "actions": [22.1],
+        "wait": 2
+    },{
+        "id": 22.1,
+        "progress": 74,
+        "heading": {
+            "text": "One thing you can do with health insurance is add dependents, which means a spouse or children.",
+            "style": "center"
+        },
+        "audio": "Q22-1.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-q22a",
+                "path": "Q22a",
+                "voffset": -90
+            }
+        },
+        "actions": [22.2],
+        "wait": 2
+    }, {
+        "id": 22.2,
+        "progress": 74,
+        "heading": {
+            "text": "Do you have any dependents?",
+            "style": "left large"
+        },
+        "audio": "Q22-2.mp3",
+        "responses": [
+            "Yes",
+            "No"
+        ],
+        "backgrounds": {
+            "init": {
+                "id": "Q4_bG_in",
+                "path": "Q4_bG_in"
+            },
+            "loop": {
+                "id": "EDGE-q4",
+                "path": "Q4bg"
+            },
+            "foreground": {
+                "id": "EDGE-q22tommy",
+                "path": "Q22tommy"
+            }
+        },
+        "actions": [23,23,23]
+    }, {
+        "id": 23,
+        "progress": 76,
+        "heading": {
+            "text": "When you compare medical insurance options, what do you think is the most important to consider?",
+            "style": "center"
+        },
+        "audio": "Q23-1.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-q23a",
+                "path": "Q23a",
+                "nofade": true,
+                "voffset": -30
+            }
+        },
+        "actions": [23.1],
+        "wait": 1
+    }, {
+        "id": 23.1,
+        "progress": 76,
+        "heading": {
+            "text": "The best way to compare medical plans is to look at all the elements.",
+            "style": "center"
+        },
+        "audio": "Q23-2.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-q23b",
+                "path": "Q23b",
+                "nofade": true,
+                "voffset": -30
+            }
+        },
+        "actions": [23.2],
+        "wait": 1
+    }, {
+        "id": 23.2,
+        "progress": 76,
+        "heading": {
+            "text": "How can you assess your health plan options? Consider your premiums and deductibles, access to providers and whether your plan is tailored to your needs.",
+            "style": "center small"
+        },
+        "audio": "Q23-3.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-q23c",
+                "path": "Q23c",
+                "nofade": true,
+                "voffset": -30
+            }
+        },
+        "actions": [23.3],
+        "wait": 1
+    }, {
+        "id": 23.3,
+        "progress": 76,
+        "heading": {
+            "text": "Also, look at any other features the plan offers, like coverage for prescription drugs or vision care. Remember, you can tailor your health insurance to your own needs.",
+            "style": "center small"
+        },
+        "audio": "Q23-4.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-q23d",
+                "path": "Q23d",
+                "voffset": -30
+            }
+        },
+        "actions": [24.1],
+        "wait": 1
+    }, {
+        "id": 24.1,
+        "progress": 80,
+        "heading": {
+            "text": "Aetna Student Health plans come with a lot of features to make them easy to use and save you money.",
+            "style": "center small"
+        },
+        "audio": "Q24-1.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "Q4_bG_in",
+                "path": "Q4_bG_in"
+            },
+            "loop": {
+                "id": "EDGE-q4",
+                "path": "Q4bg"
+            },
+            "foreground": {
+                "id": "EDGE-q24a",
+                "path": "Q24a",
+                "nofade": true
+            }
+        }, 
+        "actions": [24.2],
+        "wait": 1
+    }, {
+        "id": 24.2,
+        "progress": 80,
+        "heading": {
+            "text": "Aetna Student Health plans come with a lot of features to make them easy to use and save you money.",
+            "style": "center small"
+        },
+        "audio": "Q24-2.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "Q4_bG_in",
+                "path": "Q4_bG_in"
+            },
+            "loop": {
+                "id": "EDGE-q4",
+                "path": "Q4bg"
+            },
+            "foreground": {
+                "id": "EDGE-q24b",
+                "path": "Q24b",
+                "nofade": true
+            }
+        }, 
+        "retain": {
+            "heading": true,
+            "background": true
+        },
+        "actions": [24.3],
+        "wait": 1
+    }, {
+        "id": 24.3,
+        "progress": 80,
+        "heading": {
+            "text": "Aetna Student Health plans come with a lot of features to make them easy to use and save you money.",
+            "style": "center small"
+        },
+        "audio": "Q24-3.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "Q4_bG_in",
+                "path": "Q4_bG_in"
+            },
+            "loop": {
+                "id": "EDGE-q4",
+                "path": "Q4bg"
+            },
+            "foreground": {
+                "id": "EDGE-q24c",
+                "path": "Q24c",
+                "nofade": true
+            }
+        }, 
+        "retain": {
+            "heading": true,
+            "background": true
+        },
+        "actions": [24.4],
+        "wait": 1
+    }, {
+        "id": 24.4,
+        "progress": 80,
+        "heading": {
+            "text": "Aetna Student Health plans come with a lot of features to make them easy to use and save you money.",
+            "style": "center small"
+        },
+        "audio": "Q24-4.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "Q4_bG_in",
+                "path": "Q4_bG_in"
+            },
+            "loop": {
+                "id": "EDGE-q4",
+                "path": "Q4bg"
+            },
+            "foreground": {
+                "id": "EDGE-q24d",
+                "path": "Q24d",
+                "nofade": true
+            }
+        },
+        "retain": {
+            "heading": true,
+            "background": true
+        },
+        "actions": [24.5],
+        "wait": 1
+    }, {
+        "id": 24.5,
+        "progress": 80,
+        "heading": {
+            "text": "Aetna Student Health plans come with a lot of features to make them easy to use and save you money.",
+            "style": "center"
+        },
+        "audio": "Q24-5.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "Q4_bG_in",
+                "path": "Q4_bG_in"
+            },
+            "loop": {
+                "id": "EDGE-q4",
+                "path": "Q4bg"
+            },
+            "foreground": {
+                "id": "EDGE-q24e",
+                "path": "Q24e",
+                "nofade": true
+            }
+        }, 
+        "retain": {
+            "heading": true,
+            "background": true
+        },
+        "actions": [24.6],
+        "wait": 1
+    }, {
+        "id": 24.6,
+        "progress": 80,
+        "heading": {
+            "text": "And depending on where you’re going to school, Aetna Student Health plans may include, vision insurance or dental insurance, or offer them as add-ons. Some plans even offer the chance to get life insurance.",
+            "style": "left fortypt xlarge"
+        },
+        "audio": "Q24-6.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-91100205",
+                "path": "DORM_BG_040115"
+            }, 
+            "foreground": {
+                "id": "EDGE-q24f",
+                "path": "Q24f"
+            }
+        }, 
+        "actions": [25.1],
+        "wait": 1
+    }, {
+        "id": 25.1,
+        "progress": 84,
+        "heading": {
+            "text": "Of course, you have to balance your budget at college. Before being directed to school specific information, this tool allows you to compare the total cost of the Aetna Student Health plan with other insurance options available to you.",
+            "style": "center"
+        },
+        "audio": "Q25-1.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-q25a",
+                "path": "Q25a"
+            }
+        }, 
+        "actions": [25.2],
+        "wait": 1
+    }, {
+        "id": 25.2,
+        "progress": 84,
+        "heading": {
+            "text": "An Aetna Student Health plan may be the best alternative to other plan options. Use this tool to compare your family, employer or exchange plan to the student health insurance plan.",
+            "style": "left half"
+        },
+        "audio": "Q25-2.mp3",
+        "actions": [26, 27],
+        "responses": [
+            "Get started",
+            "No thanks, I'll compare later"
+        ],
+        "backgrounds": {
+            "foreground": {
+                "id": "EDGE-q25",
+                "path": "Q25"
+            }
+        } 
+    }, {
+        "id": 26,
+        "progress": 88,
+        "module": {
+            "type": "calculator-module"
+        },
+        "actions": [27],
+        "wait": 1
+    }, {
+        "id": 27,
+        "progress": 92,
+        "heading": {
+            "text": "Earlier you mentioned that a parent or someone else is involved in making some of your decisions. Why not send them to this site for more information?",
+            "style": "left half"
+        },
+        "audio": "Q27.mp3",
+        "responses": [
+            "Sure",
+            "Not now"
+        ],
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-91100205",
+                "path": "DORM_BG_040115"
+            }, 
+            "foreground": {
+                "id": "EDGE-q27",
+                "path": "Q27"
+            }
+        },
+        "actions": [27.1, 28]
+    }, {
+        "id": 27.1,
+        "progress": 52,
+        "module": {
+            "type": "email-module",
+            "message": "Hi, <span>Click here</span> to learn more about health insurance and Aetna",
+            "path": "student"
+        },
+        "actions": [28]
+    }, {
+        "id": 28,
+        "progress": 96,
+        "heading": {
+            "text": "Of course, the additional features an Aetna Student Health plan offers vary from school to school. Would you like to see a quick overview of how you might benefit from an Aetna Student Health plan?",
+            "style": "left half"
+        },
+        "audio": "Q28.mp3",
+        "responses": [
+            "Yes",
+            "No thanks, skip it"
+        ],
+        "backgrounds": {
+            "init": {
+                "id": "Q4_bG_in",
+                "path": "Q4_bG_in"
+            },
+            "loop": {
+                "id": "EDGE-q4",
+                "path": "Q4bg"
+            },
+            "foreground": {
+                "id": "EDGE-q28",
+                "path": "Q28"
+            }
+        },
+        "actions": [29, 29]
+    }, {
+        "id": 29,
+        "progress": 100,
+        "heading": {
+            "text": "<span style='font-weight:300'>You’ll always have Aetna as an option. <br><br>If your life changes, we’ll be right here:</span><br><br><a class=\"aetna_button\" href=\"https://www.aetnastudenthealth.com/\" target=\"_blank\">www.aetnastudenthealth.com</a>",
+            "style": "center large"
+        },
+        "audio": "Q29.mp3"
+    },
+    {
+        "id": 30,
+        "progress": 5,
+        "heading": {
+            "text": "Nice to meet you!",
+            "style": "center"
+        },
+        "audio": "Q2.mp3",
+        "characterPos": true,
+        "backgrounds": {
+            "foreground": {
+                "id": "EDGE-q2",
+                "path": "Q2",
+                "nofade": true,
+                "voffset": 75
+            }
+        },
+        "actions": [31],
+        "wait": 2,
+        "retain": {}
+    },
+    {
+        "id": 31,
+        "progress": 10,
+        "heading": {
+            "text": "Is this your student's first year at college?",
+            "style": "left"
+        },
+        "audio": "Q33.mp3",
+        "actions": [32,32,32],
+        "responses": [
+            "First-year student",
+            "Transfer student",
+            "Continuing student"
+        ],
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-91100205",
+                "path": "DORM_BG_040115"
+            },
+            "foreground": {
+                "id": "EDGE-q3",
+                "path": "Q4",
+                "nofade": true,
+                "voffset": 70
+            }
+        }
+    },
+    {
+        "id": 32,
+        "progress":15,
+        "heading": {
+            "text": "How far is school from home?",
+            "style": "left"
+        },
+        "audio": "Q4.mp3",
+        "actions": [33,33,58.1],
+        "responses": [
+            "It's drivable",
+            "Flying makes sense",
+            "They're an international student"
+        ],
+        "backgrounds": {
+            "init": {
+                "id": "Q4_bG_in",
+                "path": "Q4_bG_in"
+            },
+            "loop": {
+                "id": "EDGE-q4",
+                "path": "Q4bg"
+            },
+            "a": {
+                "id": "EDGE-91100205b",
+                "path": "Q4b"
+            }, 
+            "foreground": {
+                "id": "EDGE-q4-fg",
+                "path": "Q3_Cond",
+                "nofade": true,
+                "voffset": 70
+            }
+        },
+        "retain": {
+            "character": true,
+            "background": true
+        }
+    }, {
+        "id": 33,
+        "progress": 20,
+        "heading": {
+            "text": "This newfound independence is going to mean many new responsibilities. Does your student make doctor's appointments or pay doctors' bills?",
+            "style": "left half"
+        },
+        "audio": "Q35.mp3",
+        "responses": [
+            "Yes, they've done both",
+            "They've made appointments",
+            "They've paid doctor bills",
+            "No, someone else has done that for them",
+            "They've never been to a doctor"
+        ],
+        "actions": [34.1,34.1,34.1,34.2,34.3],
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-91100205",
+                "path": "DORM_BG_040115"
+            },
+             "foreground": {
+                "id": "EDGE-q5-fg-p",
+                "path": "Q5AParent",
+                "voffset": 70
+            }
+        },
+        "retain": {
+            "character": true
+        }
+    },
+    {
+        "id": 34.1,
+        "progress": 25,
+        "heading": {
+            "text": "That's great! Your student is familiar with the health system. But if you need a short refresher on student health insurance, maybe we can help.",
+            "style": "center"
+        },
+        "audio": "Q36a.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-7224463",
+                "path": "Q6",
+                "voffset": -60
+            }
+        },
+        "wait": 2,
+        "actions": [35]
+    },
+    {
+        "id": 34.2,
+        "progress": 25,
+        "heading": {
+            "text": "Great. But if you would like to take advantage of a short refresher course to help keep you up to date on student health insurance, we can help.",
+            "style": "center"
+        },
+        "audio": "Q36b.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-7224463",
+                "path": "Q6",
+                "voffset": -60
+            }
+        }, 
+        "wait": 2,
+        "actions": [35]
+    },{
+        "id": 34.3,
+        "progress": 25,
+        "heading": {
+            "text": "Wow, your student must be healthy! But chances are your student will have to make an appointment or pay a doctor's bill at some point. Maybe we can help.",
+            "style": "center"
+        },
+        "audio": "Q36c.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-7224463",
+                "path": "Q6",
+                "voffset": -60
+            }
+        },
+        "wait": 2,
+        "actions": [35]
+    },{
+        "id": 35,
+        "progress": 30,
+        "heading": {
+            "text": "At some schools, Aetna Student Health plans are only available for full-timers. Is your student a part or full-time?",
+            "style": "left half large"
+        },
+        "audio": "Q37.mp3",
+        "responses": [
+            "They're part-time",
+            "They're full-time"
+        ],
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-91100205",
+                "path": "DORM_BG_040115"
+            },
+            "foreground": {
+                "id": "EDGE-q7-fg",
+                "path": "Q7",
+                "nofade": true,
+                "voffset": 70
+            }
+        },
+        "actions": [36,36],
+        "retain": {}
+    },{
+        "id": 36,
+        "progress": 35,
+        "heading": {
+            "text": " Is your student in graduate school?",
+            "style": "left half large"
+        },
+        "audio": "Q38.mp3",
+        "actions": [37.2,37.1],
+        "responses": [
+            "Yes",
+            "No"
+        ],
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-91100205",
+                "path": "DORM_BG_040115"
+            },
+            "foreground": {
+                "id": "EDGE-q8-fg",
+                "path": "Q8",
+                "voffset": 70
+            }
+        },
+        "retain": {
+            "character": true,
+            "background": true
+        }
+    },{
+        "id": 37.1,
+        "progress": 40,
+        "heading": {
+            "text": "One day, maybe. But first things first.",
+            "style": "center"
+        },
+        "audio": "Q39a.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-8449181",
+                "path": "Q9a"
+            }
+        },
+        "wait": 2,
+        "actions": [38]
+    },{
+        "id": 37.2,
+        "progress": 40,
+        "heading": {
+            "text": "Schools sometimes provide a stipend for graduate students to use toward the cost of health insurance. The school may require that stipend be used towards the cost of an Aetna Student Health plan.",
+            "style": "center"
+        },
+        "audio": "Q39-1.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-9302337",
+                "path": "Q9b",
+                "voffset": -80
+            }
+        },
+        "wait": 2,
+        "actions": [37.3]
+    },{
+        "id": 37.3,
+        "progress": 40,
+        "heading": {
+            "text": "Be sure to confirm how the individual school handles this. But first, we can tell you more about how student health insurance works.",
+            "style": "center"
+        },
+        "audio": "Q39-2.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-8449181",
+                "path": "Q9b2",
+                "voffset": -60
+            }
+        },
+        "wait": 2,
+        "actions": [38]
+    },{
+        "id": 38,
+        "progress": 45,
+        "heading": {
+            "text": "Has your student ever needed care for a serious medical situation?",
+            "style": "left large"
+        },
+        "audio": "Q40.mp3",
+        "responses": [
+            "No, nothing serious",
+            "Actually, they have"
+        ],
+        "actions": [39.1, 39.2],
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-15970772",
+                "path": "Q10in"
+            },
+            "b": {
+                "id": "EDGE-15970771",
+                "path": "Q10b"
+            }
+        }
+    },{
+        "id": 39.1,
+        "progress": 50,
+        "heading": {
+            "text": "But, if at some time your student did need treatment, you would want it to be covered. An unforseen medical problem could easily be a financial problem for years to come. No one needs extra worry when they’re sick. Let’s find out why and how you can help to keep that from happening.",
+            "style": "center small"
+        },
+        "audio": "Q41a.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-89675237",
+                "path": "Q11a"
+            }
+        },
+        "wait": 2,
+        "actions": [40.1]
+    },{
+        "id": 39.2,
+        "progress": 50,
+        "heading": {
+            "text": "Then you know it can be tricky to balance recovery with making sure all the bills are taken care of the right way, so they don’t become a huge financial problem. Let’s find out how you can help to keep that from happening.",
+            "style": "center"
+        },
+        "audio": "Q41b.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-q12a",
+                "path": "Q12a"
+            }
+        },
+        "wait": 2,
+        "actions": [40.1]
+    },{
+        "id":40.1,
+        "progress": 55,
+        "heading": {
+            "text": "Any medical care costs money. Doctors, nurses and hospitals all need to get paid.",
+            "style": "center"
+        },
+        "audio": "Q42-1.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-q12a",
+                "path": "Q12a",
+                "voffset": -70
+            }
+        },
+        "wait": 2,
+        "actions": [40.2]
+    },{
+        "id":40.2,
+        "progress": 55,
+        "heading": {
+            "text": "That’s why people get health insurance. When you have medical expenses, the insurance company will often pay a part of the bills, making the parts you’re responsible for much easier to handle.",
+            "style": "center"
+        },
+        "audio": "Q42-2.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-q12a",
+                "path": "Q12a"
+            }
+        },
+        "wait": 2,
+        "actions": [40.3]
+    },{
+        "id":40.3,
+        "progress": 55,
+        "heading": {
+            "text": "Does your student have medical insurance right now?",
+            "style": "left large third"
+        },
+        "audio": "Q42-3.mp3",
+        "responses": [
+            "Yes, they do",
+            "No, not at the moment"
+        ],
+        "actions": [41,41.2],
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-doctor",
+                "path": "DOCTORS_BG_040215"
+            },
+            "foreground": {
+                "id": "EDGE-q12",
+                "path": "Q12",
+                "transitionOut": true,
+                "voffset": 70
+            }
+        }
+    },{
+        "id": 41,
+        "progress": 60,
+        "heading": {
+            "text": "What type of plan?",
+            "style": "left large"
+        },
+        "audio": "Q43.mp3",
+        "responses": [
+            "Through their job",
+            "Parent's insurance",
+            "Something else or I don't know"
+        ],
+        "actions": [41.1,41.1,41.2],
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-library",
+                "path": "LIBRARY_BG_040115"
+            },
+            "foreground": {
+                "id": "EDGE-q13-fg",
+                "path": "Q13",
+                "voffset": 70
+            }
+        },
+        "retain": {
+            "character": true
+        }
+    },{
+        "id":41.1,
+        "progress": 60,
+        "heading": {
+            "text": "Staying on a parent’s plan may be a good option. But there are some good reasons to consider the Aetna Student Health plan. Let’s take a look at how health plans work.",
+            "style": "center"
+        },
+        "audio": "Q44a.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-q12a",
+                "path": "Q12a"
+            }
+        },
+        "wait": 2,
+        "actions": [42.1]
+    },{
+        "id":41.2,
+        "progress": 60,
+        "heading": {
+            "text": "It sounds like an Aetna Student Health plan might be perfect. Let’s take a look at how health plans work.",
+            "style": "center"
+        },
+        "audio": "Q44b.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-q12a",
+                "path": "Q12a",
+                "voffset": -70
+            }
+        },
+        "wait": 2,
+        "actions": [42.1]
+    },{
+        "id":42.1,
+        "progress": 70,
+        "heading": {
+            "text": "Medical plans have a group of doctors and hospitals that have agreed to work with that plan and accept certain rates for their services. That group is called a \"network.\"",
+            "style": "center small"
+        },
+        "audio": "Q15-1p.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-504987525",
+                "path": "Q15",
+                "voffset": -20
+            }
+        },
+        "wait": 2,
+        "actions": [42.2]
+    },{
+        "id": 42.2,
+        "progress": 70,
+        "heading": {
+            "text": "Did you know that if your student sees a doctor who isn’t in the network, the charge could be higher?",
+            "style": "center medium"
+        },
+        "audio": "Q15-2p.mp3",
+        "actions": [42.3],
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-4752740",
+                "path": "Q16A",
+                "voffset": 50,
+                "nofade": true
+            }
+        },
+        "wait": 2
+    },{
+        "id": 42.3,
+        "progress": 70,
+        "heading": {
+            "text": "If your plan doesn’t offer coverage outside its network, you or your student could be on the hook for the full cost.",
+            "style": "center medium"
+        },
+        "audio": "Q15-3p.mp3",
+        "actions": [43],
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-87741465",
+                "path": "Q16B",
+                "voffset": 50,
+                "nofade": true
+            }
+        },
+        "wait": 2
+    },{
+        "id": 43,
+        "progress": 75,
+        "heading": {
+            "text": "In the case of an Aetna Student Health plan, the network is the Aetna Preferred Provider network. It’s made up of lots of doctors and specialists — all over the country.",
+            "style": "center small"
+        },
+        "audio": "Q16p.mp3",
+        "actions": [44.1],
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-175604431",
+                "path": "Q16C", 
+                "voffset": 50
+            }
+        },
+        "wait": 2
+    },{
+        "id": 44.1,
+        "progress": 80,
+        "heading": {
+            "text": "Most conveniently, the Aetna network usually includes the student health center on campus. This is the ﬁrst place to go to if your student needs medical attention. Unless it’s an emergency, of course.",
+            "style": "center small"
+        },
+        "audio": "Q17-1p.mp3",
+        "actions": [44.2],
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-q17a",
+                "path": "Q17A",
+                "voffset": 50,
+                "nofade": true
+            }
+        },
+        "wait": 3
+    },{
+        "id": 44.2,
+        "progress": 80,
+        "heading": {
+            "text": "If it turns out more care is needed than the student health center can provide, your student will usually be referred to a local doctor who’s in the network.",
+            "style": "center small "
+        },
+        "audio": "Q17-2p.mp3",
+        "actions": [45.1],
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-q17b",
+                "path": "Q17B",
+                "voffset": 50,
+                "nofade": true
+            }
+        },
+        "wait": 2
+    },{
+        "id": 45.1,
+        "progress": 85,
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-q17c",
+                "path": "Q17C",
+                "voffset": 50
+            }
+        },
+        "actions": [45.2],
+        "wait": 3
+    },{
+        "id": 45.2,
+        "progress": 85,
+        "heading": {
+            "text": "One more note on networks, some can be very small. Your student should make sure the plan has network doctors near school.",
+            "style": "center medium"
+        },
+        "audio": "Q18-1p.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-Q18A",
+                "path": "Q18A",
+                "voffset": 55,
+                "nofade": true
+            }
+        },
+        "actions": [46.1],
+        "wait": 2
+    },{
+        "id": 46.1 ,
+        "progress": 85,        
+        "heading": {
+            "text": "If not, your student may need to run home for any non-emergency care.",
+            "style": "center medium"
+        },
+        "audio": "Q18-2p.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-18B",
+                "path": "Q18B",
+                "voffset": 55,
+                "nofade": true
+            }
+        },
+        "actions": [46.2],
+        "wait": 2
+    },{
+        "id": 46.2,
+        "progress": 85,
+        "heading": {
+            "text": "Luckily, the Aetna network has doctors almost everywhere your student may go, all year. Coverage also includes trips to many other countries.",
+            "style": "center small "
+        },
+        "audio": "Q19p.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-Q19",
+                "path": "Q19",
+                "voffset": 55,
+                "nofade": true
+            }
+        },
+        "actions": [47.1],
+        "wait": 2
+    },{
+        "id": 47.1,
+        "progress": 90,
+        "heading": {
+            "text": "Insurance plans cover some of your student's costs for medical services, but that usually doesn’t kick in right away. Many medical plans have an amount of money that the student needs to pay first. This is called a \"deductible.\"",
+            "style": "center medium"
+        },
+        "audio": "Q20-1p.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-9302337",
+                "path": "Q20a",
+                "fadeIn": true
+            }
+        },
+        "actions": [47.2],
+        "wait": 2
+    },{
+        "id": 47.2,
+        "progress": 90,
+        "heading": {
+            "text": "These can be low, or upward of a thousand dollars. The school's Aetna Student Health plan will likely have a deductible, but it's usually pretty reasonable.",
+            "style": "left fortypt xlarge"
+        },
+        "audio": "Q20-2p.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-q20b",
+                "path": "Q20b",
+                "fadeIn": true
+            }
+        },
+        "actions": [48.1],
+        "wait": 2
+    },{
+        "id": 48.1,
+        "progress": 91,
+        "heading": {
+            "text": "Now, to join an insurance plan, your student will need to pay what’s called a \"premium.\" Two people might have very different premiums based on how likely they are to use their plan’s coverage.",
+            "style": "center"
+        },
+        "audio": "Q21-1p.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-q21a",
+                "path": "Q21a",
+                "fadeIn": true,
+                "nofade": true,
+                "voffset": -10
+            }
+        },
+        "actions": [48.2],
+        "wait": 2
+    },{
+        "id": 48.2,
+        "progress": 91,
+        "heading": {
+            "text": "If your student is younger, their premium will most likely be lower than an older person. That's simply because an older person is more likely to become ill.",
+            "style": "center small"
+        },
+        "audio": "Q21-2p.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-q21b",
+                "path": "Q21b",
+                "voffset": -10
+            }
+        },
+        "actions": [49.1],
+        "wait": 2
+    },{
+        "id": 49.1,
+        "progress": 91,
+        "heading": {
+            "text": "One thing you can do with insurance is to add 'dependents' &ndash; which means a spouse or children.",
+            "style": "center"
+        },
+        "audio": "Q45-1.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-q22a",
+                "path": "Q22a",
+                "voffset": -80
+            }
+        },
+        "actions": [49.2],
+        "wait": 2
+    }, {
+        "id": 49.2,
+        "progress": 91,
+        "heading": {
+            "text": "Does your student have any dependents?",
+            "style": "left large"
+        },
+        "audio": "Q45-2.mp3",
+        "responses": [
+            "Yes",
+            "No"
+        ],
+        "backgrounds": {
+            "init": {
+                "id": "Q4_bG_in",
+                "path": "Q4_bG_in"
+            },
+            "loop": {
+                "id": "EDGE-q4",
+                "path": "Q4bg"
+            },
+            "foreground": {
+                "id": "EDGE-q22tommy",
+                "path": "Q22tommy"
+            }
+        },
+        "actions": [49.4]
+    },
+
+     {
+        "id": 49.4,
+        "progress": 91,
+        "heading": {
+            "text": "Well, all are important. But one of those factors could be more important than the others to any given person. The best way to compare medical plans is to look at all the elements.",
+            "style": "center"
+        },
+        "audio": "Q45-4.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-q23b",
+                "path": "Q23b",
+                "nofade": true,
+                "voffset": -30
+            }
+        },
+        "actions": [49.5],
+        "wait": 1
+    }, {
+        "id": 49.5,
+        "progress": 91,
+        "heading": {
+            "text": "Find a premium that you and your student are comfortable with. Look for a network that includes doctors and hospitals wherever one might be needed. Make sure the deductible suits the student's needs.",
+            "style": "center small"
+        },
+        "audio": "Q45-5.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-q23c",
+                "path": "Q23c",
+                "nofade": true,
+                "voffset": -30
+            }
+        },
+        "actions": [49.6],
+        "wait": 1
+    }, {
+        "id": 49.6,
+        "progress": 91,
+        "heading": {
+            "text": "Also, look at any other features that the plan offers, like coverage for prescription drugs or vision care. Remember, it's important to tailor the insurance to the student's needs.",
+            "style": "center small"
+        },
+        "audio": "Q45-6.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-q23d",
+                "path": "Q23d",
+                "voffset": -30
+            }
+        },
+        "actions": [50.1],
+        "wait": 1
+    }, {
+        "id": 50.1,
+        "progress": 92,
+        "heading": {
+            "text": "Aetna Student Health plans come with a lot of other features that make them easy to use and save you money.",
+            "style": "center small"
+        },
+        "audio": "Q24-1.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "Q4_bG_in",
+                "path": "Q4_bG_in"
+            },
+            "loop": {
+                "id": "EDGE-q4",
+                "path": "Q4bg"
+            },
+            "foreground": {
+                "id": "EDGE-q24a",
+                "path": "Q24a",
+                "nofade": true
+            }
+        }, 
+        "actions": [50.2],
+        "wait": 1
+    }, {
+        "id": 50.2,
+        "progress": 92,
+        "heading": {
+            "text": "Aetna Student Health plans come with a lot of other features that make them easy to use and save money.",
+            "style": "center small"
+        },
+        "audio": "Q24-2.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "Q4_bG_in",
+                "path": "Q4_bG_in"
+            },
+            "loop": {
+                "id": "EDGE-q4",
+                "path": "Q4bg"
+            },
+            "foreground": {
+                "id": "EDGE-q24b",
+                "path": "Q24b",
+                "nofade": true
+            }
+        }, 
+        "retain": {
+            "heading": true,
+            "background": true
+        },
+        "actions": [50.3],
+        "wait": 1
+    }, {
+        "id": 50.3,
+        "progress": 92,
+        "heading": {
+            "text": "Aetna Student Health plans come with a lot of other features that make them easy to use and save money.",
+            "style": "center small"
+        },
+        "audio": "Q24-3.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "Q4_bG_in",
+                "path": "Q4_bG_in"
+            },
+            "loop": {
+                "id": "EDGE-q4",
+                "path": "Q4bg"
+            },
+            "foreground": {
+                "id": "EDGE-q24c",
+                "path": "Q24c",
+                "nofade": true
+            }
+        }, 
+        "retain": {
+            "heading": true,
+            "background": true
+        },
+        "actions": [50.4],
+        "wait": 1
+    }, {
+        "id": 50.4,
+        "progress": 92,
+        "heading": {
+            "text": "Aetna Student Health plans come with a lot of other features that make them easy to use and save money.",
+            "style": "center small"
+        },
+        "audio": "Q24-4.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "Q4_bG_in",
+                "path": "Q4_bG_in"
+            },
+            "loop": {
+                "id": "EDGE-q4",
+                "path": "Q4bg"
+            },
+            "foreground": {
+                "id": "EDGE-q24d",
+                "path": "Q24d",
+                "nofade": true
+            }
+        },
+        "retain": {
+            "heading": true,
+            "background": true
+        },
+        "actions": [50.5],
+        "wait": 1
+    }, {
+        "id": 50.5,
+        "progress": 92,
+        "heading": {
+            "text": "Aetna Student Health plans come with a lot of other features that make them easy to use and save money.",
+            "style": "center"
+        },
+        "audio": "Q24-5.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "Q4_bG_in",
+                "path": "Q4_bG_in"
+            },
+            "loop": {
+                "id": "EDGE-q4",
+                "path": "Q4bg"
+            },
+            "foreground": {
+                "id": "EDGE-q24e",
+                "path": "Q24e",
+                "nofade": true
+            }
+        }, 
+        "retain": {
+            "heading": true,
+            "background": true
+        },
+        "actions": [50.6],
+        "wait": 1
+    }, {
+        "id": 50.6,
+        "progress": 92,
+        "heading": {
+            "text": "And depending on where the school is, Aetna Student Health plans may include, vision insurance or dental insurance or offer them as add-ons. Some plans even offer the chance to get life insurance.",
+            "style": "left fortypt xlarge "
+        },
+        "audio": "Q24-6.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-91100205",
+                "path": "DORM_BG_040115"
+            }, 
+            "foreground": {
+                "id": "EDGE-q24f",
+                "path": "Q24f"
+            }
+        }, 
+        "actions": [51.1],
+        "wait": 1
+    }, {
+        "id": 51.1,
+        "progress": 93,
+        "heading": {
+            "text": "Of course your student has to balance their budget at college. Before being directed to school specific information, this tool will show you how an Aetna Student Health plan compares to health exchange plans.",
+            "style": "center"
+        },
+        "audio": "Q48-1.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-q25a",
+                "path": "Q25a"
+            }
+        }, 
+        "actions": [51.2],
+        "wait": 1
+    }, {
+        "id": 51.2,
+        "progress": 93,
+        "heading": {
+            "text": "An Aetna Student Health insurance plan may be the best alternative to other plan options. Use this tool to compare your family, employer or exchange plan to the Student Health insurance plan.",
+            "style": "left half"
+        },
+        "audio": "Q48-2.mp3",
+        "actions": [52, 53],
+        "responses": [
+            "Get started",
+            "No thanks, I'll compare later"
+        ],
+        "backgrounds": {
+            "foreground": {
+                "id": "EDGE-q25",
+                "path": "Q25"
+            }
+        } 
+    }, {
+        "id": 52,
+        "progress": 94,
+        "module": {
+            "type": "calculator-module"
+        },
+        "actions": [53],
+        "wait": 1
+    },{
+        "id": 53,
+        "progress": 95,
+        "heading": {
+            "text": "Why not send this site to your student to learn more about how health insurance works and the benefits of a student health plan?",
+            "style": "left half"
+        },
+        "responses": [
+            "Sure",
+            "Not now"
+        ],
+        "audio": "Q50.mp3",
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-91100205",
+                "path": "DORM_BG_040115"
+            }, 
+            "foreground": {
+                "id": "EDGE-q27",
+                "path": "Q27"
+            }
+        },
+        "actions": [54, 55] 
+    },{
+        "id": 54,
+        "progress": 96,
+        "module": {
+            "type": "email-module",
+            "message": "Hi, An Aetna Student Health plan may be a good fit for you. Click <span>here</span> to learn more.",
+            "path": "parent"
+        },
+        "actions": [55]
+    },{
+        "id": 55,
+        "progress": 97,
+        "heading": {
+            "text": "Of course, the additional features an Aetna Student Health Plan offers vary from school to school. Would you like to see a quick overview of how you and your student might benefit from an Aetna Student Health plan?",
+            "style": "left half"
+        },
+        "audio": "Q51.mp3",
+        "responses": [
+            "Yes, I do",
+            "No thanks, skip it"
+        ],
+        "backgrounds": {
+            "init": {
+                "id": "Q4_bG_in",
+                "path": "Q4_bG_in"
+            },
+            "loop": {
+                "id": "EDGE-q4",
+                "path": "Q4bg"
+            },
+            "foreground": {
+                "id": "EDGE-q28",
+                "path": "Q28"
+            }
+        },
+        "actions": [56,56]
+    },{
+        "id": 56,
+        "progress": 100,
+        "heading": {
+            "text": "<span style='font-weight:300'>You’ll always have Aetna as an option. <br><br>If your life changes, we’ll be right here:</span><br><br><a class=\"aetna_button\" target=\"_blank\" href=\"https://www.aetnastudenthealth.com/schools/do-the-math.html\">www.aetnastudenthealth.com</a>",
+            "style": "center large"
+        },
+        "audio": "Q52.mp3"
+    }, {
+        "id": 57.1,
+        "progress": 10,
+        "heading": {
+            "text": "Welcome to the US! The American health system is great, but we do things differently than many countries.",
+            "style": "center medium"
+        },
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-q31a",
+                "path": "Q31A"
+            }
+        },
+        "audio": "Q31-1.mp3",
+        "wait": 2,
+        "actions": [57.2]
+    }, {
+        "id": 57.2,
+        "progress": 10,
+        "heading": {
+            "text": "If you get sick, or need medical attention while at school, it’s important to know what to do.",
+            "style": "center medium"
+        },
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-q31b",
+                "path": "Q31B"
+            }
+        },
+        "audio": "Q31-2.mp3",
+        "actions": [5],
+        "wait": 2
+    }, {
+        "id": 58.1,
+        "progress": 10,
+        "heading": {
+            "text": "Welcome to the US! The American health system is great, but we do things differently than many countries.",
+            "style": "center medium"
+        },
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-q31a",
+                "path": "Q31A"
+            }
+        },
+        "audio": "Q31-1.mp3",
+        "actions": [58.2],
+        "wait": 2
+    }, {
+        "id": 58.2,
+        "progress": 10,
+        "heading": {
+            "text": "If you get sick, or need medical attention while at school, it’s important to know what to do.",
+            "style": "center medium"
+        },
+        "backgrounds": {
+            "init": {
+                "id": "EDGE-q31b",
+                "path": "Q31B"
+            }
+        },
+        "audio": "Q31-2.mp3",
+        "actions": [33],
+        "wait": 2
+    }
+]
